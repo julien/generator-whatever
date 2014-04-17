@@ -1,0 +1,45 @@
+{
+  "name": "generator-whatever",
+  "version": "0.0.0",
+  "description": "A Yeoman generator for JS based apps, whatever you want to use.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "julien/generator-whatever",
+  
+  "author": {
+    "name": "Julien Castelain",
+    "email": "jcastelain@gmail.com",
+    "url": "https://github.com/julien"
+  },
+  
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  
+  "scripts": {
+    "test": "mocha"
+  },
+  
+  "files": [
+    "app"
+  ],
+  
+  "keywords": [
+    "yeoman-generator", 
+    "javascript",
+    "framework agnostic"
+  ],
+  
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  
+  "devDependencies": {
+    "mocha": "*"
+  },
+
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.0.0",
+  
+  "author":      "   ",
+  "description": "   ",
+  "readme":      "   ",
+  "repository":  "   ",
+  
+  "main": "make.js",
+  
+  "scripts": {
+    "start": "cd src && node ../node_modules/sencisho/bin/sencisho -l -w js/*js",
+    "postinstall": "node ./node_modules/bower/bin/bower install",
+    "test": "node ./node_modules/karma/bin/karma start test/karma.conf.js",
+
+    "build": "node ./node_modules/shelljs/bin/shjs make.js",
+    "clean": "node ./node_modules/shelljs/bin/shjs make.js clean",
+    "lint" : "node ./node_modules/eslint/bin/eslint src/js/*.js",
+    "test-single": "node ./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
+  },
+
+  "devDependencies": {
+    "bower": "latest",
+    "eslint": "latest",
+    "html-minifier": "latest",
+    "htmlprocessor": "latest",
+    "karma": "latest",
+    "karma-coverage": "latest",
+    "karma-jasmine": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "sencisho": "latest",
+    "shelljs": "latest",
+    "uglify-js": "latest"
+  },
+    
+  "license": "MIT"
+}
