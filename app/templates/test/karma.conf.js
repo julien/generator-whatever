@@ -7,9 +7,8 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     files: [
-
       'src/js/**/*.js',
-      'test/unit/**/*_test.js'
+      'test/**/*_test.js'
     ],
 
     // list of files to exclude

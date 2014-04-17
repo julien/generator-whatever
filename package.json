@@ -1,9 +1,14 @@
 {
   "name": "generator-whatever",
-  "version": "0.0.1",
-  "description": "A Yeoman generator for JS based apps, whatever you want to use.",
+  
+  "version": "0.0.3",
+
+  "description": "A [Yeoman](http://yeoman.io) generator aimed to be used with whatever framework you want to.",
+
   "license": "MIT",
+  
   "main": "app/index.js",
+  
   "repository": "julien/generator-whatever",
   
   "author": {

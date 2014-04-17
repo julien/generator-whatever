@@ -16,8 +16,7 @@
 
     "build": "node ./node_modules/shelljs/bin/shjs make.js",
     "clean": "node ./node_modules/shelljs/bin/shjs make.js clean",
-    "lint" : "node ./node_modules/eslint/bin/eslint src/js/*.js",
-    "test-single": "node ./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
+    "lint" : "node ./node_modules/eslint/bin/eslint src/js/*.js"
   },
 
   "devDependencies": {

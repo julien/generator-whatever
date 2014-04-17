@@ -19,12 +19,7 @@ var WhateverGenerator = yeoman.generators.Base.extend({
   askFor: function () {
     var done = this.async();
 
-    // have Yeoman greet the user
-    // this.log(this.yeoman);
-
-    // replace it with a short and sweet description of your generator
-    // this.log(chalk.magenta('You\'re using the fantastic Frameworkless generator.'));
-    this.log(chalk.magenta('Welcome to the frameworkless generator.'));
+    this.log(chalk.magenta('Whatever...'));
 
     var prompts = [{
       type: 'input',
@@ -43,27 +38,24 @@ var WhateverGenerator = yeoman.generators.Base.extend({
     this.mkdir('src/js');
 
     this.mkdir('test');
-    this.mkdir('test/unit');
 
     this.template('_package.json', 'package.json');
     this.template('_bower.json', 'bower.json');
     this.copy('_make.js', 'make.js');
-
   },
 
   projectfiles: function () {
     this.copy('bowerrc', '.bowerrc');
     this.copy('editorconfig', '.editorconfig');
     this.copy('eslintrc', '.eslintrc');
-    
-    // this.copy('gitattributes', '.gitattributes');
-    // this.copy('gitignore', '.gitignore');
+    this.copy('gitattributes', '.gitattributes');
+    this.copy('gitignore', '.gitignore');
     
     this.template('src/index.html', 'src/index.html');
     this.copy('src/js/app.js', 'src/js/app.js');
 
     this.copy('test/karma.conf.js', 'test/karma.conf.js');
-    this.copy('test/unit/app_test.js', 'test/unit/app_test.js');
+    this.copy('test/app_test.js', 'test/app_test.js');
   }
 });
 

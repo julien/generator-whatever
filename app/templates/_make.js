@@ -4,14 +4,12 @@ var htmlprocessor = require('./node_modules/htmlprocessor/index')
   , libs
   , src;
 
-lib = [
-  // add your libraries here, e.g.:
-  // 'src/bower_components/angular/angular.js'
-];
+// add your libraries here, e.g.:
+// lib = [//'src/bower_components/lib/lib.js'];
 
+// add your source files here; e.g.:
 src = [
-  // add your source files here; e.g.:
-  // 'src/js/app.js'
+  'src/js/app.js'
 ];
 
 target.clean = function () {
@@ -25,17 +23,14 @@ target.bundle = function () {
   
   cd(__dirname);
   
-
+  mkdir('build');
   // minify js
-  // exec('node node_modules/uglify-js/bin/uglifyjs ' + 
-  //   lib.join(' ') + ' -o build/lib.js -m -c \'warnings=false\' --screw-ie8');
+  // exec('node node_modules/uglify-js/bin/uglifyjs ' + lib.join(' ') + ' -o build/lib.js -m -c \'warnings=false\' --screw-ie8');
+  
+  exec('node node_modules/uglify-js/bin/uglifyjs ' + src.join(' ') + ' -o build/app.js -m -c \'warnings=false\' --screw-ie8');
 
-  // exec('node node_modules/uglify-js/bin/uglifyjs ' +
-  //   src.join(' ') + '  -o build/src.js -m -c \'warnings=false\' --screw-ie8');
-
-  // prepare html
-  // htmlprocessor({src: ['./src/index.html'], dest: 'build/index.html'});
-
+  // process html
+  htmlprocessor({src: ['./src/index.html'], dest: 'build/index.html'});
 };
 
 target.all = function () {
