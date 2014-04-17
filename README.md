@@ -14,13 +14,13 @@ $ npm install -g yo
 ```
 
 ```
-$ npm install -g generator-frameworkless
+$ npm install -g generator-whatever
 ```
 
 Finally, initiate the generator:
 
 ```
-$ yo frameworkless
+$ yo whatever
 ```
 
 #### License
