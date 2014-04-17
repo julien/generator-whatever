@@ -33,7 +33,7 @@ $ npm start
 
 + To run unit tests; (using [karma](http://karma-runner.github.io/0.12/index.html)), use:
 
-``
+```
 $ npm test
 ```
 

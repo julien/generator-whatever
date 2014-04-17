@@ -1,7 +1,7 @@
 {
   "name": "generator-whatever",
   
-  "version": "0.0.3",
+  "version": "0.0.4",
 
   "description": "A [Yeoman](http://yeoman.io) generator aimed to be used with whatever framework you want to.",
 
